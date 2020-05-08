@@ -5,8 +5,26 @@ table.regular {
 table.regular, th, td {
   border: 1px solid;
     border-color: deepskyblue;
-}
+};
 
 table.currency, th, td {
     border-color: white;
 }
+
+#cp {
+    background-color: chocolate;
+}
+#sp {
+    background-color: silver;
+}
+#ep {
+    background-color: green;
+}
+#gp {
+    background-color: gold;
+}
+#pp {
+    background-color: slategray;
+};
+
+//i dont want there to be borders around the second table but i want borders arounf the first table. I dont know why but only one table css will work and it applies to both even though they have different classes
