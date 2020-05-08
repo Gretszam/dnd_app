@@ -2,13 +2,13 @@
 
 <head>
     <title>Features Page</title>
-    <link rel = "stylesheet" type="text/css" href = "./tables.css">
-    <link rel = "stylesheet" type = "text/css" href = "./styles.css">
+    <link rel="stylesheet" type="text/css" href="./tables.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 
 <body>
     <h1>Character Features</h1>
-    <table class = "regular">
+    <table class="regular">
         <tr>
             <th>Class</th>
             <th>Background</th>
@@ -18,26 +18,61 @@
             <th>EXP</th>
         </tr>
         <tr>
-            <th> <input type="text" id="classText" value="Class Name" /> </th>
-            <th> <input tpye="text" id="bkgrdText" value="Background Name" /> </th>
+            <th>
+                <div class="dropdown_container">
+                    <select id="classDrop">
+                        <option value="pal">Paladin</option>
+                        <option value="fight">Fighter</option>
+                        <option value="wiz">Wizard</option>
+                    </select>
+                </div>
+            </th>
+            <th>
+                <div class="dropdown_container">
+                    <select id="bkgdDrop">
+                        <option value="acolyte">Acolyte</option>
+                        <option value="criminal">Criminal</option>
+                    </select>
+                </div>
+            </th>
             <th> <input typw="text" id="playerText" value="Your Name" /> </th>
-            <th> <input type="text" id="raceText" value="Race Name" /> </th>
-            <th> <input type="text" id="alignText" value="Alignment Name" /> </th>
+            <th>
+                <div class="dropdown_container">
+                    <select id="raceDrop">
+                        <option value="human">Human</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+            </th>
+            <th>
+                <div class="dropdown_container">
+                    <select id="alignDrop">
+                        <option value="lawG">Lawful Good</option>
+                        <option value="neutral">Neutral</option>
+                        <option value="chaoticG">Chaotic Good</option>
+                    </select>
+                </div>
+            </th>
             <th> <input type="text" id="expText" value="Exp Points" /> </th>
         </tr>
     </table>
 
     <p></p>
-    <p class = "center"><strong><u>Features</u></strong></p>
-    <p>feature stuff will go here with small headings like "Race Name Features" and list the features and so on and so forth. Gotta figure out how to do that first.</p>
+    <p class="center"><strong><u>Features</u></strong></p>
+    <p>feature stuff will go here with small headings like "Race Name Features" and list the features and so on and so forth. Gotta figure out how to do that first. MAYBE this shouldn't able to be editable by the player but just be generated</p>
     <p></p>
-    <p class = "center"><strong><u>Proficiencies</u></strong></p>
+    <p class="center"><strong><u>Proficiencies</u></strong></p>
     <p>proficiencies stuff will go here with small headings like "Armor" and list the stuff ur proficient in and so on and so forth. Gotta figure out how to do that first.</p>
     <p></p>
-    <p class = "center"><strong><u>Equipment and Items</u></strong></p>
-    <p>should be easier, a text box of bullet points.</p>
+    <p class="center"><strong><u>Equipment and Items</u></strong></p>
+    <div id="equipment">
+        <button onclick="addItem()">add item</button>
+        <input type="text" id="inventory" />
+        <button onclick="removeItem()">remove item</button>
+        <ul id="dynamic-list"></ul>
+    </div>
 
-    <table class = "currency">
+    <table class="currency">
         <tr>
             <td><input type="text" id="cp" value="0" /></td>
             <td><input type="text" id="sp" value="0" /></td>
@@ -61,6 +96,5 @@
     <a href="spells.html">Spells</a>
     <a href="dice.html">Dice</a>
     <a href="welcome.html">Welcome</a>
-</body>
-
-</html>
+    <script src="script.js"></script>
+</body></html>
