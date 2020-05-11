@@ -7,19 +7,20 @@
 </head>
 
 <body>
-    <h1>Character Features</h1>
-    <table class="regular">
+    <h1 class="center">Character Features</h1>
+
+    <table class="regular" style="margin-left:auto;margin-right:auto;">
         <tr>
-            <th>Class</th>
-            <th>Background</th>
-            <th>Player Name</th>
-            <th>Race</th>
-            <th>Alignment</th>
-            <th>EXP</th>
+            <th class="regular">Class</th>
+            <th class="regular">Background</th>
+            <th class="regular">Character Name</th>
+            <th class="regular">Race</th>
+            <th class="regular">Alignment</th>
+            <th class="regular">EXP</th>
         </tr>
         <tr>
-            <th>
-                <div class="dropdown_container">
+            <th class="regular">
+                <div class="dropdown">
                     <select id="classDrop">
                         <option value="pal">Paladin</option>
                         <option value="fight">Fighter</option>
@@ -27,33 +28,33 @@
                     </select>
                 </div>
             </th>
-            <th>
-                <div class="dropdown_container">
+            <th class="regular">
+                <div class="dropdown">
                     <select id="bkgdDrop">
                         <option value="acolyte">Acolyte</option>
                         <option value="criminal">Criminal</option>
                     </select>
                 </div>
             </th>
-            <th> <input typw="text" id="playerText" value="Your Name" /> </th>
-            <th>
-                <div class="dropdown_container">
+            <th class="regular"> <input type="text" id="featCharName" placeholder="Character Name" size="15" /> </th>
+            <th class="regular">
+                <div class="dropdown">
                     <select id="raceDrop">
                         <option value="human">Human</option>
                         <option value="no">No</option>
                     </select>
                 </div>
             </th>
-            <th>
-                <div class="dropdown_container">
+            <th class="regular">
+                <div class="dropdown">
                     <select id="alignDrop">
-                        <option value="lawG">Lawful Good</option>
+                        <option value="lawfulG">Lawful Good</option>
                         <option value="neutral">Neutral</option>
                         <option value="chaoticG">Chaotic Good</option>
                     </select>
                 </div>
             </th>
-            <th> <input type="text" id="expText" value="Exp Points" /> </th>
+            <th class="regular"> <input type="text" id="expText" placeholder="Exp Points" size="10" /> </th>
         </tr>
     </table>
 
@@ -67,32 +68,35 @@
     </div>
     <div id="inven">
         <p class="center"><strong><u>Inventory</u></strong></p>
-        <div id="equipment">
-            <input type="text" id="inventory" />
-            <button onclick="addItem()">Add item</button>
-            <button onclick="removeItem()">Remove item</button>
-            <ul id="dynamic-list"></ul>
-        </div>
+
+        <button onclick="addItem()">Add item</button>
+        <button onclick="removeItem()">Remove item</button>
+        <input type="text" id="inventory" placeholder="Type item to add/remove it" />
+
+        <ul id="dynamic-list"></ul>
     </div>
 
-    <table class="currency">
+    <p></p>
+
+    <table class="currency" style="margin-left:auto;margin-right:auto;">
         <tr>
-            <td><input type="text" id="cp" value="0" /></td>
-            <td><input type="text" id="sp" value="0" /></td>
-            <td><input type="text" id="ep" value="0" /></td>
-            <td><input type="text" id="gp" value="0" /></td>
-            <td><input type="text" id="pp" value="0" /></td>
+            <td class="currency"><input type="text" id="cp" value="0" /></td>
+            <td class="currency"><input type="text" id="sp" value="0" /></td>
+            <td class="currency"><input type="text" id="ep" value="0" /></td>
+            <td class="currency"><input type="text" id="gp" value="0" /></td>
+            <td class="currency"><input type="text" id="pp" value="0" /></td>
         </tr>
         <tr>
-            <th>CP</th>
-            <th>SP</th>
-            <th>EP</th>
-            <th>GP</th>
-            <th>PP</th>
+            <th class="currency">CP</th>
+            <th class="currency">SP</th>
+            <th class="currency">EP</th>
+            <th class="currency">GP</th>
+            <th class="currency"> PP</th>
         </tr>
     </table>
 
     <p></p>
+
     <a href="stats.html">Stats</a>
     <a href="skills.html">Skills</a>
     <a href="weapons.html">Weapons</a>
