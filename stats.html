@@ -8,13 +8,21 @@
     <h1 class="center">Character Stats</h1>
     <button onclick="">Save</button>
     <button onclick="">Load</button>
-    <button class="right" onclick="">Level Up!</button>
+    <button class="right" onclick="levelUp">Level Up!</button>
     <p></p>
-    <input type = "text" id="charName" value="Character Name">
-    <input type = "text" id="level" value="Class Level">
+    <input type = "text" id="charName" value="Character Name" />
+    <input type = "text" id="level" value="Class Level" />
     <p></p>
     <label>Rest:</label>
-    <button onclivk
+    <p></p>
+    <button onclick="shortRest()">Short</button>
+    <button onclick="longRest()">Long</button>
+    <p></p>
+    <button class = "right" onclick="heal()">Heal</button>
+    <p></p>
+    <input type="text" class="right" id="hpInput" value="#">
+    <p></p>
+    <button class = "right" onclick="damage()">Damage</button>
     <div id="output"></div>
 </body>
 

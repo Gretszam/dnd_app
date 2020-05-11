@@ -1,3 +1,28 @@
 .center {
+text-align: center;
+}
 
-};
+.right {
+    text-align: right;
+}
+
+#features {
+    border: 5px solid;
+    border-color: brown;
+    border-width: thick;
+    width: auto;
+}
+
+#prof {
+    border: 5px solid;
+    border-color: pink;
+    border-width: thick;
+    width: auto;
+}
+
+#inven {
+    border: 5px solid;
+    border-color: darkorange;
+    border-width: thick;
+    width: auto;
+}

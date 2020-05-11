@@ -57,19 +57,22 @@
         </tr>
     </table>
 
-    <p></p>
-    <p class="center"><strong><u>Features</u></strong></p>
-    <p>feature stuff will go here with small headings like "Race Name Features" and list the features and so on and so forth. Gotta figure out how to do that first. MAYBE this shouldn't able to be editable by the player but just be generated</p>
-    <p></p>
-    <p class="center"><strong><u>Proficiencies</u></strong></p>
-    <p>proficiencies stuff will go here with small headings like "Armor" and list the stuff ur proficient in and so on and so forth. Gotta figure out how to do that first.</p>
-    <p></p>
-    <p class="center"><strong><u>Equipment and Items</u></strong></p>
-    <div id="equipment">
-                <input type="text" id="inventory" />
-        <button onclick="addItem()">Add item</button>
-        <button onclick="removeItem()">Remove item</button>
-        <ul id="dynamic-list"></ul>
+    <div id="features">
+        <p class="center"><strong><u>Features</u></strong></p>
+        <p>feature stuff will go here with small headings like "Race Name Features" and list the features and so on and so forth. Gotta figure out how to do that first. MAYBE this shouldn't able to be editable by the player but just be generated</p>
+    </div>
+    <div id="prof">
+        <p class="center"><strong><u>Proficiencies</u></strong></p>
+        <p>proficiencies stuff will go here with small headings like "Armor" and list the stuff ur proficient in and so on and so forth. Gotta figure out how to do that first.</p>
+    </div>
+    <div id="inven">
+        <p class="center"><strong><u>Inventory</u></strong></p>
+        <div id="equipment">
+            <input type="text" id="inventory" />
+            <button onclick="addItem()">Add item</button>
+            <button onclick="removeItem()">Remove item</button>
+            <ul id="dynamic-list"></ul>
+        </div>
     </div>
 
     <table class="currency">
@@ -97,4 +100,6 @@
     <a href="dice.html">Dice</a>
     <a href="welcome.html">Welcome</a>
     <script src="script.js"></script>
-</body></html>
+</body>
+
+</html>
