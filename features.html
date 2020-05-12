@@ -21,36 +21,36 @@
         <tr>
             <th class="regular">
                 <div class="dropdown">
-                    <select id="classDrop">
-                        <option value="pal">Paladin</option>
-                        <option value="fight">Fighter</option>
-                        <option value="wiz">Wizard</option>
+                    <select id="classDrop" onchange="getClass()">
+                        <option>Choose Class</option>
                     </select>
                 </div>
             </th>
             <th class="regular">
                 <div class="dropdown">
-                    <select id="bkgdDrop">
-                        <option value="acolyte">Acolyte</option>
-                        <option value="criminal">Criminal</option>
+                    <select id="selectBkgd" onchange="getBkgd()">
+                        <option>Choose Background</option>
                     </select>
                 </div>
             </th>
             <th class="regular"> <input type="text" id="featCharName" placeholder="Character Name" size="15" /> </th>
             <th class="regular">
                 <div class="dropdown">
-                    <select id="raceDrop">
-                        <option value="human">Human</option>
-                        <option value="no">No</option>
+                    <select id="raceDrop" onchange="getRaceTraits()">
+                        <option>Choose Race</option>
                     </select>
                 </div>
             </th>
             <th class="regular">
                 <div class="dropdown">
                     <select id="alignDrop">
-                        <option value="lawfulG">Lawful Good</option>
-                        <option value="neutral">Neutral</option>
-                        <option value="chaoticG">Chaotic Good</option>
+                        <option>Lawful Good</option>
+                        <option>Lawful Neutral</option>
+                        <option>Lawful Evil</option>
+                        <option>Neutral</option>
+                        <option>Chaotic Good</option>
+                        <option>Chaotic Neutral</option>
+                        <option>Chaotic Evil</option>
                     </select>
                 </div>
             </th>
@@ -60,11 +60,27 @@
 
     <div id="features">
         <p class="center"><strong><u>Features</u></strong></p>
-        <p>feature stuff will go here with small headings like "Race Name Features" and list the features and so on and so forth. Gotta figure out how to do that first. MAYBE this shouldn't able to be editable by the player but just be generated</p>
+        <p><u>Class Features:</u></p>
+        <div id="classFeats"></div>
+        <p><u>Background Features:</u></p>
+        <div id="bkgdFeats"></div>
+        <p><u>Race Features:</u></p>
+        <div id="raceFeats"></div>
+        <p><u>Feats:</u></p>
+        <div id="feats"></div>
     </div>
     <div id="prof">
         <p class="center"><strong><u>Proficiencies</u></strong></p>
-        <p>proficiencies stuff will go here with small headings like "Armor" and list the stuff ur proficient in and so on and so forth. Gotta figure out how to do that first.</p>
+        <p><u>Armor:</u></p>
+        <p id="profArmor"></p>
+        <p><u>Weapons:</u></p>
+        <p id="profWeapons"></p>
+        <p><u>Languages:</u></p>
+        <p id="profLang1"></p>
+        <p id="profLang2"></p>
+        <p><u>Tools:</u></p>
+        <p id="profTools"></p>
+
     </div>
     <div id="inven">
         <p class="center"><strong><u>Inventory</u></strong></p>
