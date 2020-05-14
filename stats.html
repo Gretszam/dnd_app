@@ -16,20 +16,97 @@
     <input type="text" id="statCharName" name="name" placeholder="Character Name" size="17" />
     <input type="text" id="charLevel" name="class" placeholder="Class Level" size="15" style="float: right;" />
 
+    <table style="margin-left:auto;margin-right:auto;">
+        <tr>
+            <th id="ac">#</th>
+            <th id="init">#</th>
+            <th id="speed">#</th>
+        </tr>
+        <tr>
+            <th>Armor Class</th>
+            <th>Initiative</th>
+            <th>Speed</th>
+        </tr>
+    </table>
+
     <p></p>
 
     <label>Rest:</label>
     <button onclick="shortRest()">Short</button>
     <button onclick="longRest()">Long</button>
 
-    <div id="healing" style="float: right;">
-        <button class="right" onclick="heal()">Heal</button>
-        <p></p>
-        <input type="text" class="right" id="hpInput" placeholder="#" size="2" />
-        <p></p>
-        <button class="right" onclick="damage()">Damage</button>
+    <div id="health">
+        <label>Hit Point Maximum:</label>
+        <input type="text" id="maxHP" placeholder="#" size="2" />
+        <label>Current Hit Points:</label>
+        <input type="text" id="currentHP" size="2" />
+        <label>Temporary Hit Points:</label>
+        <input type="text" id="tempHP" size="2" />
     </div>
 
+    <div id="healing" style="float: right;">
+        <button onclick="heal()">Heal</button>
+        <p></p>
+        <input type="text" id="hpInput" placeholder="#" size="2" />
+        <p></p>
+        <button onclick="damage()">Damage</button>
+    </div>
+
+    <p></p>
+
+    <div id="hitDice">
+        <label>Total Hit Dice:</label>
+        <input id="totalHitDice" type="text" placeholder="#d#" size="2" />
+        <p id="currentHitDice">#d#(first # is based on what level u are and decreases each time the player presses "use hit die" button and resets with the press of the long rest button</p>
+        <button onclick="useHitDie()">Use Hit Die</button>
+    </div>
+
+    <div id="deathSaves" style="float: right;">
+        <p><strong>Death Saves</strong></p>
+        <p></p>
+        <label>Successes:</label>
+        <input type="checkbox" style="float: inherit" />
+        <input type="checkbox" style="float: inherit" />
+        <input type="checkbox" style="float: inherit" />
+        <p></p>
+        <label>Failures:</label>
+        <input type="checkbox" style="float: inherit;" />
+        <input type="checkbox" style="float: inherit;" />
+        <input type="checkbox" style="float: inherit;" />
+    </div>
+
+    <p></p>
+
+    <table id=abilities>
+        <thead>Ability Scores</thead>
+        <tr>
+            <th>Strength</th>
+            <th>Dexterity</th>
+            <th>Constitution</th>
+        </tr>
+        <tr>
+            <td id="str">#</td>
+            <td id="dex">#</td>
+            <td id="con">#</td>
+        </tr>
+        <tr>
+            <th>Intelligence</th>
+            <th>Wisdom</th>
+            <th>Charisma</th>
+        </tr>
+        <tr>
+            <td id="int">#</td>
+            <td id="wis">#</td>
+            <td id="cha">#</td>
+        </tr>
+    </table>
+
+    <a href="features.html">Features</a>
+    <a href="skills.html">Skills</a>
+    <a href="weapons.html">Weapons</a>
+    <a href="spells.html">Spells</a>
+    <a href="dice.html">Dice</a>
+    <a href="welcome.html">Welcome</a>
 </body>
 
 </html>

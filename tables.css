@@ -5,6 +5,7 @@ td {
     border-spacing: 2px;
     border: 2px solid;
     border-color: deepskyblue;
+    text-decoration-color: black;
 }
 
 .currency,
@@ -33,3 +34,4 @@ td {
 #pp {
     background-color: slategray;
 }
+
