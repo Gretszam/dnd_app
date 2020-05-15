@@ -2,6 +2,8 @@
 
 <head>
     <title>Stats Page</title>
+    <link rel="stylesheet" type="text/css" href="./tables.css">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 
 <body>
@@ -35,14 +37,6 @@
     <button onclick="shortRest()">Short</button>
     <button onclick="longRest()">Long</button>
 
-    <div id="health">
-        <label>Hit Point Maximum:</label>
-        <input type="text" id="maxHP" placeholder="#" size="2" />
-        <label>Current Hit Points:</label>
-        <input type="text" id="currentHP" size="2" />
-        <label>Temporary Hit Points:</label>
-        <input type="text" id="tempHP" size="2" />
-    </div>
 
     <div id="healing" style="float: right;">
         <button onclick="heal()">Heal</button>
@@ -52,6 +46,17 @@
         <button onclick="damage()">Damage</button>
     </div>
 
+    <div id="health">
+        <label>Hit Point Maximum:</label>
+        <input type="text" id="maxHP" placeholder="#" size="2" />
+        <p></p>
+        <label>Current Hit Points:</label>
+        <input type="text" id="currentHP" size="2" />
+        <label>Temporary Hit Points:</label>
+        <input type="text" id="tempHP" size="2" />
+    </div>
+
+    <p></p>
     <p></p>
 
     <div id="hitDice">
@@ -107,6 +112,9 @@
     <a href="spells.html">Spells</a>
     <a href="dice.html">Dice</a>
     <a href="welcome.html">Welcome</a>
+
+    <script src="script.js"></script>
+
 </body>
 
 </html>
