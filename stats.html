@@ -47,21 +47,26 @@
     </div>
 
     <div id="health">
-        <label>Hit Point Maximum:</label>
-        <input type="text" id="maxHP" placeholder="#" size="2" />
-        <p></p>
-        <label>Current Hit Points:</label>
-        <input type="text" id="currentHP" size="2" />
-        <label>Temporary Hit Points:</label>
-        <input type="text" id="tempHP" size="2" />
+        <p>Hit Point Maximum:
+            <input type="text" id="maxHP" placeholder="#" size="2" />
+            <button id="max_hp_roll">Roll</button>
+        </p>
+        <p>Current Hit Points:
+            <input type="text" id="currentHP" size="2" />
+        </p>
+        <p>Temporary Hit Points:
+            <input type="text" id="tempHP" size="2" />
+            <button>Add Temporary Hit Points</button>
+        </p>
     </div>
 
     <p></p>
     <p></p>
 
     <div id="hitDice">
-        <label>Total Hit Dice:</label>
-        <input id="totalHitDice" type="text" placeholder="#d#" size="2" />
+        <p>Total Hit Dice:
+            <input id="totalHitDice" type="text" placeholder="#d#" size="2" />
+        </p>
         <p id="currentHitDice">#d#(first # is based on what level u are and decreases each time the player presses "use hit die" button and resets with the press of the long rest button</p>
         <button onclick="useHitDie()">Use Hit Die</button>
     </div>
@@ -115,6 +120,4 @@
 
     <script src="script.js"></script>
 
-</body>
-
-</html>
+</body></html>

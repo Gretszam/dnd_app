@@ -1,9 +1,9 @@
 //d4
 rollD4.addEventListener("click", () => {
-    rollDice(document.getElementById("textbox").value)
+    roll4(document.getElementById("textbox").value)
 })
 
-function rollDice(number) {
+function roll4() {
 
     var dice = document.getElementById("dice4");
 
@@ -12,14 +12,14 @@ function rollDice(number) {
         die.remove();
     }
 
-   var d4_1 = document.createElement("img");
-d4_1.src = "d4_up1.png";
-  var d4_2 = document.createElement("img");
-  d4_2.src = "d4_up2.png";
-  var d4_3 = document.createElement("img");
-d4_3.src = "d4_up3.png";
-  var d4_4 = document.createElement("img");
-d4_4.src = "d4_up4.png";
+    var d4_1 = document.createElement("img");
+    d4_1.src = "d4_up1.png";
+    var d4_2 = document.createElement("img");
+    d4_2.src = "d4_up2.png";
+    var d4_3 = document.createElement("img");
+    d4_3.src = "d4_up3.png";
+    var d4_4 = document.createElement("img");
+    d4_4.src = "d4_up4.png";
     var imgs = ["d4_1", "d4_2", "d4_3", "d4_4"];
 
     for (let i = 0; i < number; i++) {
@@ -32,10 +32,10 @@ d4_4.src = "d4_up4.png";
 }
 
 executeD4.addEventListener("click", () => {
-    rollDice(document.getElementById("textbox").value)
+    roll4Again(document.getElementById("textbox").value)
 })
 
-function rollDice(number) {
+function roll4Again() {
 
     var dice = document.getElementById("dice4");
 
@@ -44,14 +44,14 @@ function rollDice(number) {
         die.remove();
     }
 
-var d4_1 = document.createElement("img");
-d4_1.src = "d4_up1.png";
-  var d4_2 = document.createElement("img");
-  d4_2.src = "d4_up2.png";
-  var d4_3 = document.createElement("img");
-d4_3.src = "d4_up3.png";
-  var d4_4 = document.createElement("img");
-d4_4.src = "d4_up4.png";
+    var d4_1 = document.createElement("img");
+    d4_1.src = "d4_up1.png";
+    var d4_2 = document.createElement("img");
+    d4_2.src = "d4_up2.png";
+    var d4_3 = document.createElement("img");
+    d4_3.src = "d4_up3.png";
+    var d4_4 = document.createElement("img");
+    d4_4.src = "d4_up4.png";
     var imgs = ["d4_1", "d4_2", "d4_3", "d4_4"];
 
     for (let i = 0; i < number; i++) {
@@ -81,10 +81,10 @@ close.onclick = function () {
 
 //d6
 rollD6.addEventListener("click", () => {
-    rollDice(document.getElementById("textbox2").value)
+    roll6(document.getElementById("textbox2").value)
 })
 
-function rollDice(number) {
+function roll6(number) {
 
     var dice = document.getElementById("dice6");
 
@@ -105,10 +105,10 @@ function rollDice(number) {
 }
 
 executeD6.addEventListener("click", () => {
-    rollDice(document.getElementById("textbox2").value)
+    roll6Again(document.getElementById("textbox2").value)
 })
 
-function rollDice(number) {
+function roll6Again(number) {
 
     var dice = document.getElementById("dice6");
 
@@ -146,10 +146,10 @@ close.onclick = function () {
 
 //d8
 rollD8.addEventListener("click", () => {
-    rollDice(document.getElementById("textbox3").value)
+    roll8(document.getElementById("textbox3").value)
 })
 
-function rollDice(number) {
+function roll8(number) {
 
     var dice = document.getElementById("dice8");
 
@@ -170,10 +170,10 @@ function rollDice(number) {
 }
 
 executeD8.addEventListener("click", () => {
-    rollDice(document.getElementById("textbox3").value)
+    roll8Again(document.getElementById("textbox3").value)
 })
 
-function rollDice(number) {
+function roll8Again(number) {
 
     var dice = document.getElementById("dice8");
 
@@ -211,10 +211,10 @@ close.onclick = function () {
 
 //d10
 rollD10.addEventListener("click", () => {
-    rollDice(document.getElementById("textbox4").value)
+    roll10(document.getElementById("textbox4").value)
 })
 
-function rollDice(number) {
+function roll10(number) {
 
     var dice = document.getElementById("dice10");
 
@@ -235,10 +235,10 @@ function rollDice(number) {
 }
 
 executeD10.addEventListener("click", () => {
-    rollDice(document.getElementById("textbox4").value)
+    roll10Again(document.getElementById("textbox4").value)
 })
 
-function rollDice(number) {
+function roll10Again(number) {
 
     var dice = document.getElementById("dice10");
 
@@ -276,10 +276,10 @@ close.onclick = function () {
 
 //d12
 rollD12.addEventListener("click", () => {
-    rollDice(document.getElementById("textbox5").value)
+    roll12(document.getElementById("textbox5").value)
 })
 
-function rollDice(number) {
+function roll12(number) {
 
     var dice = document.getElementById("dice12");
 
@@ -300,10 +300,10 @@ function rollDice(number) {
 }
 
 executeD12.addEventListener("click", () => {
-    rollDice(document.getElementById("textbox5").value)
+    roll12Again(document.getElementById("textbox5").value)
 })
 
-function rollDice(number) {
+function roll12Again(number) {
 
     var dice = document.getElementById("dice12");
 
@@ -341,10 +341,10 @@ close.onclick = function () {
 
 //d20
 rollD20.addEventListener("click", () => {
-    rollDice(document.getElementById("textbox6").value)
+    roll20(document.getElementById("textbox6").value)
 })
 
-function rollDice(number) {
+function roll20(number) {
 
     var dice = document.getElementById("dice20");
 
@@ -365,10 +365,10 @@ function rollDice(number) {
 }
 
 executeD20.addEventListener("click", () => {
-    rollDice(document.getElementById("textbox6").value)
+    roll20Again(document.getElementById("textbox6").value)
 })
 
-function rollDice(number) {
+function roll20Again(number) {
 
     var dice = document.getElementById("dice20");
 
@@ -406,10 +406,10 @@ close.onclick = function () {
 
 //Percentile Die
 rollPercent.addEventListener("click", () => {
-    rollDice(document.getElementById("textbox7").value)
+    rollPercentile(document.getElementById("textbox7").value)
 })
 
-function rollDice(number) {
+function rollPercentile(number) {
 
     var dice = document.getElementById("dicePercent");
 
@@ -429,10 +429,10 @@ function rollDice(number) {
 }
 
 executePercent.addEventListener("click", () => {
-    rollDice(document.getElementById("textbox7").value)
+    rollPercentAgain(document.getElementById("textbox7").value)
 })
 
-function rollDice(number) {
+function rollPercentAgain(number) {
 
     var dice = document.getElementById("dicePercent");
 
