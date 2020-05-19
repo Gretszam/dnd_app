@@ -9,20 +9,16 @@
 <body>
     <h1 class="center">Character Stats</h1>
 
-    <button onclick="save()">Save</button>
-    <button onclick="load()">Load</button>
-    <button onclick="levelUp()" style="float: right;">Level Up!</button>
-
-    <p></p>
-
     <input type="text" id="statCharName" name="name" placeholder="Character Name" size="17" />
     <input type="text" id="charLevel" name="class" placeholder="Class Level" size="15" style="float: right;" />
 
     <table style="margin-left:auto;margin-right:auto;">
         <tr>
-            <th id="ac">#</th>
-            <th id="init">#</th>
-            <th id="speed">#</th>
+            <th><input id="ac" type="text" size="1" /> </th>
+            <th><input id="init" type="text" size="1" /> </th>
+            </th>
+            <th><input id="speed" type="text" size="1" /> </th>
+            </th>
         </tr>
         <tr>
             <th>Armor Class</th>
@@ -33,24 +29,22 @@
 
     <p></p>
 
-    <label>Rest:</label>
-    <button onclick="shortRest()">Short</button>
-    <button onclick="longRest()">Long</button>
-
-
     <div id="healing" style="float: right;">
         <button onclick="heal()">Heal</button>
         <p></p>
+
         <input type="text" id="hpInput" placeholder="#" size="2" />
         <p></p>
         <button onclick="damage()">Damage</button>
     </div>
 
     <div id="health">
+
         <p>Hit Point Maximum:
-            <input type="text" id="maxHP" placeholder="#" size="2" />
-            <button id="max_hp_roll">Roll</button>
+            <input type="text" id="maxHPDisplay" placeholder="#" size="2" />
+            <button id="max_hp">Roll</button>
         </p>
+
         <p>Current Hit Points:
             <input type="text" id="currentHP" size="2" />
         </p>
@@ -87,17 +81,17 @@
 
     <p></p>
 
-    <table id=abilities>
-        <thead>Ability Scores</thead>
+    <table align="center" id=abilities>
+        <thead colspan="2">Ability Scores</thead>
         <tr>
             <th>Strength</th>
             <th>Dexterity</th>
             <th>Constitution</th>
         </tr>
         <tr>
-            <td id="str">#</td>
-            <td id="dex">#</td>
-            <td id="con">#</td>
+            <th><input type="text" id="str" size="1" /></th>
+            <th><input type="text" id="dex" size="1" /></th>
+            <th><input type="text" id="con" size="1" /></th>
         </tr>
         <tr>
             <th>Intelligence</th>
@@ -105,9 +99,9 @@
             <th>Charisma</th>
         </tr>
         <tr>
-            <td id="int">#</td>
-            <td id="wis">#</td>
-            <td id="cha">#</td>
+            <th><input type="text" id="int" size="1" /> </th>
+            <th><input type="text" id="wis" size="1" /></th>
+            <th><input type="text" id="cha" size="1" /></th>
         </tr>
     </table>
 
@@ -118,6 +112,8 @@
     <a href="dice.html">Dice</a>
     <a href="welcome.html">Welcome</a>
 
-    <script src="script.js"></script>
+    <script src="statsScript.js"></script>
 
-</body></html>
+</body>
+
+</html>
