@@ -27,30 +27,21 @@
         </tr>
     </table>
 
-    <p></p>
-
-    <div id="healing" style="float: right;">
-        <button onclick="heal()">Heal</button>
-        <p></p>
-
-        <input type="text" id="hpInput" placeholder="#" size="2" />
-        <p></p>
-        <button onclick="damage()">Damage</button>
-    </div>
-
-    <div id="health">
+    <div id="health" class="center">
 
         <div id="modalMax" class="modal">
         </div>
+
+
         <p>
             Maximum Hit Points: <input type="text" id="max_hp" size="1" /> <button id="max_hp_roll_button">Roll</button>
         </p>
 
 <p>
-    Current Hit Points: <input type="text" id="current_hp" size="1" />
+    Current Hit Points: <input type="text" id="current_hp" size="23" placeholder="subtract damage from max hp" />
 </p>
         <p>
-        Temporary Hit Points: <input type="text" id="temp_hp" size="1" />
+        Temporary Hit Points: <input type="text" id="temp_hp" size="1" placeholder="" />
         </p>
 
 </div>
@@ -79,10 +70,9 @@
             <input type="checkbox" style="float: inherit;" />
         </div>
 
-        <p></p>
-
-        <table align="center" id=abilities>
-            <thead colspan="2">Ability Scores</thead>
+        <table id=abilities>
+            <th></th>
+            <th>Ability Scores</thead>
             <tr>
                 <th>Strength</th>
                 <th>Dexterity</th>
@@ -105,8 +95,9 @@
             </tr>
         </table>
 
+<p></p>
+
         <a href="features.html">Features</a>
-        <a href="skills.html">Skills</a>
         <a href="weapons.html">Weapons</a>
         <a href="spells.html">Spells</a>
         <a href="dice.html">Dice</a>

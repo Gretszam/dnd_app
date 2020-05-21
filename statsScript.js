@@ -16,15 +16,8 @@ hpRoll.addEventListener("click", () => {
   document.getElementById("max_hp").value = character.hp;
 });
 
-intRoll.addEventListener("click", () => {
-  let val = rollAbility();
-  character.int = val;
-  document.getElementById("int").value = character.int;
-});
 
-// Algorithm for rolling HP
 function rollHP() {
-  // Check class to see which dice need to be rolled
   let value = 0;
 
   if (character.class == "Fighter" || "Paladin") {
@@ -37,17 +30,7 @@ function rollHP() {
   return value;
 }
 
-// A different algorithm for rolling an ability.
-function rollAbility() {
-  let value = rollDice(6) + rollDice(6) + rollDice(6);
-  displayDice(value, 6);
-  displayDice(value, 6);
-  displayDice(value, 6);
 
-  return value;
-}
-
-// General function for rolling any dice.
 function rollDice(numDie) {
   let value = Math.ceil(Math.random() * numDie);
   return value;
