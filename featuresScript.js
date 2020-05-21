@@ -95,3 +95,11 @@ var select = document.getElementById("classDrop");
            document.getElementById("profLang1").innerHTML = "You can speak, read, and write Common and one extra language of your choice.";
        }
    }
+
+let character = {
+    name: "",
+    hp: 0,
+    ac: 10,
+};
+
+character.name = document.getElementById("featCharName");
