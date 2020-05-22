@@ -17,18 +17,18 @@ hpRoll.addEventListener("click", () => {
     document.getElementById("max_hp").value = character.hp;
 });
 
-var modal = document.getElementById("modalMax");
+var modalMaximum = document.getElementById("modalMax");
 
 var die = document.getElementById("max_hp_roll_button");
 
 var close = document.getElementsByClassName("closeMax")[0];
 
 die.onclick = function () {
-    modal.style.display = "block";
+    modalMaximum.style.display = "block";
 }
 
 close.onclick = function () {
-    modal.style.display = "none";
+    modalMaximum.style.display = "none";
 }
 
 
