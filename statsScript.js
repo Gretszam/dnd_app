@@ -1,9 +1,33 @@
 function save() {
     window.localStorage['statCharName'] = document.getElementById("statCharName").value;
+
+    window.localStorage['str'] = document.getElementById("str").value;
+
+    window.localStorage['dex'] = document.getElementById("dex").value;
+
+    window.localStorage['can'] = document.getElementById("con").value;
+
+    window.localStorage['int'] = document.getElementById("int").value;
+
+    window.localStorage['wis'] = document.getElementById("wis").value;
+
+    window.localStorage['cha'] = document.getElementById("cha").value;
 }
 
 function load() {
     document.getElementById("statCharName").value = window.localStorage['statCharName'];
+
+    document.getElementById("str").value = window.localStorage['str'];
+
+    document.getElementById("dex").value = window.localStorage['dex'];
+
+    document.getElementById("con").value = window.localStorage['con'];
+
+    document.getElementById("int").value = window.localStorage['int'];
+
+    document.getElementById("wis").value = window.localStorage['wis'];
+
+    document.getElementById("cha").value = window.localStorage['cha'];
 }
 
 let character = {
