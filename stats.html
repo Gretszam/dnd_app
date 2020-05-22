@@ -27,84 +27,95 @@
         </tr>
     </table>
 
+    <p></p>
+
     <div id="health" class="center">
 
-        <div id="modalMax" class="modal">
-        </div>
-
-
         <p>
-            Maximum Hit Points: <input type="text" id="max_hp" size="1" /> <button id="max_hp_roll_button">Roll</button>
+            Maximum Hit Points:
+            <input type="text" id="max_hp" size="1" />
+            <button id="max_hp_roll_button">Roll</button>
         </p>
 
-<p>
-    Current Hit Points: <input type="text" id="current_hp" size="23" placeholder="subtract damage from max hp" />
-</p>
+         <div id="modalMax" class="modal">
+            <div class="modal-content">
+                <div id="maxDie"></div>
+                <p>Roll for Your Maximum Hit Points.</p>
+                <button id="rollMaxAgain">Roll Again</button>
+                <button class="closeMax">Close</button>
+            </div>
+        </div>
+
         <p>
-        Temporary Hit Points: <input type="text" id="temp_hp" size="1" placeholder="" />
+            Current Hit Points: <input type="text" id="current_hp" size="23" placeholder="subtract damage from max hp" />
+        </p>
+        <p>
+            Temporary Hit Points: <input type="text" id="temp_hp" size="1" placeholder="" />
         </p>
 
-</div>
+    </div>
+
+    <p></p>
+
+    <div id="hitDice">
+        <p>Total Hit Dice:
+            <input id="totalHitDice" type="text" placeholder="#d#" size="2" />
+        </p>
+        <p id="currentHitDice"></p>
+        <button onclick="useHitDie()">Use Hit Die</button>
+    </div>
+
+    <p></p>
+
+    <div id="deathSaves" style="float: right;">
+        <p><strong>Death Saves</strong></p>
         <p></p>
+        <label>Successes:</label>
+        <input type="checkbox" style="float: inherit" />
+        <input type="checkbox" style="float: inherit" />
+        <input type="checkbox" style="float: inherit" />
         <p></p>
+        <label>Failures:</label>
+        <input type="checkbox" style="float: inherit;" />
+        <input type="checkbox" style="float: inherit;" />
+        <input type="checkbox" style="float: inherit;" />
+    </div>
 
-        <div id="hitDice">
-            <p>Total Hit Dice:
-                <input id="totalHitDice" type="text" placeholder="#d#" size="2" />
-            </p>
-            <p id="currentHitDice"></p>
-            <button onclick="useHitDie()">Use Hit Die</button>
-        </div>
+    <table class="abilities" align="center">
+        <thead>
+            <th colspan="3">Ability Scores</th>
+        </thead>
+        <tr>
+            <th>Strength</th>
+            <th>Dexterity</th>
+            <th>Constitution</th>
+        </tr>
+        <tr>
+            <th><input type="text" id="str" size="1" /></th>
+            <th><input type="text" id="dex" size="1" /></th>
+            <th><input type="text" id="con" size="1" /></th>
+        </tr>
+        <tr>
+            <th>Intelligence</th>
+            <th>Wisdom</th>
+            <th>Charisma</th>
+        </tr>
+        <tr>
+            <th><input type="text" id="int" size="1" /> </th>
+            <th><input type="text" id="wis" size="1" /></th>
+            <th><input type="text" id="cha" size="1" /></th>
+        </tr>
+    </table>
 
-        <div id="deathSaves" style="float: right;">
-            <p><strong>Death Saves</strong></p>
-            <p></p>
-            <label>Successes:</label>
-            <input type="checkbox" style="float: inherit" />
-            <input type="checkbox" style="float: inherit" />
-            <input type="checkbox" style="float: inherit" />
-            <p></p>
-            <label>Failures:</label>
-            <input type="checkbox" style="float: inherit;" />
-            <input type="checkbox" style="float: inherit;" />
-            <input type="checkbox" style="float: inherit;" />
-        </div>
+    <p></p>
 
-        <table class=abilities>
-            <thead>
-                <th colspan="3">Ability Scores</th>
-            </thead>
-            <tr>
-                <th>Strength</th>
-                <th>Dexterity</th>
-                <th>Constitution</th>
-            </tr>
-            <tr>
-                <th><input type="text" id="str" size="1" /></th>
-                <th><input type="text" id="dex" size="1" /></th>
-                <th><input type="text" id="con" size="1" /></th>
-            </tr>
-            <tr>
-                <th>Intelligence</th>
-                <th>Wisdom</th>
-                <th>Charisma</th>
-            </tr>
-            <tr>
-                <th><input type="text" id="int" size="1" /> </th>
-                <th><input type="text" id="wis" size="1" /></th>
-                <th><input type="text" id="cha" size="1" /></th>
-            </tr>
-        </table>
+    <a href="features.html">Features</a>
+    <a href="weapons.html">Weapons</a>
+    <a href="spells.html">Spells</a>
+    <a href="dice.html">Dice</a>
+    <a href="welcome.html">Welcome</a>
 
-<p></p>
-
-        <a href="features.html">Features</a>
-        <a href="weapons.html">Weapons</a>
-        <a href="spells.html">Spells</a>
-        <a href="dice.html">Dice</a>
-        <a href="welcome.html">Welcome</a>
-
-        <script src="statsScript.js"></script>
+    <script src="statsScript.js"></script>
 
 </body>
 

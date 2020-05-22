@@ -11,8 +11,7 @@ td {
 .currency,
 th,
 td {
-    border-collapse: collapse;
-    border-color: white;
+    border-style: hidden;
 }
 
 #cp {

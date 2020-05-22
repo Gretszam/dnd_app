@@ -4,7 +4,6 @@ let character = {
     hp_modifier: 2,
     ac: 10,
     class: "Fighter",
-    int: 0,
 };
 
 character.name = document.getElementById("statCharName");
@@ -17,6 +16,22 @@ hpRoll.addEventListener("click", () => {
     character.hp = val + character.hp_modifier;
     document.getElementById("max_hp").value = character.hp;
 });
+
+var modal = document.getElementById("modalMax");
+
+var die = document.getElementById("max_hp_roll_button");
+
+var close = document.getElementsByClassName("closeMax")[0];
+
+die.onclick = function () {
+    modal.style.display = "block";
+}
+
+close.onclick = function () {
+    modal.style.display = "none";
+}
+
+
 
 
 function rollHP() {
@@ -39,7 +54,13 @@ function rollDice(numDie) {
 }
 
 function displayDice(value, base) {
-    var modalMax = document.getElementById("modalMax");
+
+    var diceDisplay = document.getElementById("maxDie");
+
+    for (let i = diceDisplay.children.length - 1; i >= 0; i--) {
+        var die = diceDisplay.children[i];
+        die.remove();
+    }
 
     if (character.class == "Fighter" || "Paladin") {
         var d10 = ["d10_up1.png", "d10_up2.png", "d10_up3.png", "d10_up4.png", "d10_up5.png", "d10_up6.png", "d10_up7.png", "d10_up8.png", "d10_up9.png", "d10_up10"];
@@ -47,7 +68,7 @@ function displayDice(value, base) {
             var hp10 = document.createElement("img");
             var die10 = Math.floor(Math.random() * 10);
             hp10.setAttribute("src", d10[die10]);
-            modalMax.appendChild(hp10);
+            diceDisplay.appendChild(hp10);
 
         }
         if (character.class == "Wizard") {
@@ -57,7 +78,7 @@ function displayDice(value, base) {
                 var hp6 = document.createElement("img");
                 var die6 = Math.floor(Math.random() * 6);
                 hp6.setAttribute("src", d6[die6]);
-                modalMax.appendChild(hp6);
+                diceDisplay.appendChild(hp6);
             }
         }
     }
