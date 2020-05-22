@@ -63,7 +63,9 @@ function displayDice(value, base) {
     }
 
     if (character.class == "Fighter" || "Paladin") {
+
         var d10 = ["d10_up1.png", "d10_up2.png", "d10_up3.png", "d10_up4.png", "d10_up5.png", "d10_up6.png", "d10_up7.png", "d10_up8.png", "d10_up9.png", "d10_up10"];
+
         for (let i = 0; i < base; i++) {
             var hp10 = document.createElement("img");
             var die10 = Math.floor(Math.random() * 10);

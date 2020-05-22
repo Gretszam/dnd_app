@@ -97,9 +97,9 @@ var select = document.getElementById("classDrop");
    }
 
 let character = {
-    name: "",
+    name: document.getElementById("featCharName"),
     hp: 0,
     ac: 10,
+    class: getClass,
 };
 
-character.name = document.getElementById("featCharName");
