@@ -1,3 +1,11 @@
+function save() {
+    window.localStorage['statCharName'] = document.getElementById("statCharName").value;
+}
+
+function load() {
+    document.getElementById("statCharName").value = window.localStorage['statCharName'];
+}
+
 let character = {
     name: "",
     hp: 0,
