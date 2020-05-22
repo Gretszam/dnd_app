@@ -64,23 +64,55 @@ function displayDice(value, base) {
 
     if (character.class == "Fighter" || "Paladin") {
 
-        var d10 = ["d10_up1.png", "d10_up2.png", "d10_up3.png", "d10_up4.png", "d10_up5.png", "d10_up6.png", "d10_up7.png", "d10_up8.png", "d10_up9.png", "d10_up10"];
+        let roll1 = document.createElement("img");
+    roll1.src = "d10_up1.png";
+    let roll2 = document.createElement("img");
+    roll2.src = "d10_up2.png";
+    let roll3 = document.createElement("img");
+    roll3.src = "d10_up3.png";
+    let roll4 = document.createElement("img");
+    roll4.src = "d10_up4.png";
+    let roll5 = document.createElement("img");
+    roll5.src = "d10_up5.png";
+    let roll6 = document.createElement("img");
+    roll6.src = "d10_up6.png";
+    let roll7 = document.createElement("img");
+    roll7.src = "d10_up7.png";
+    let roll8 = document.createElement("img");
+    roll8.src = "d10_up8.png";
+    let roll9 = document.createElement("img");
+    roll9.src = "d10_up9.png";
+    let rolld10 = document.createElement("img");
+    rolld10.src = "d10_up10.png";
+
+    var hp10 = [roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8, roll9, rolld10];
+
 
         for (let i = 0; i < base; i++) {
-            var hp10 = document.createElement("img");
             var die10 = Math.floor(Math.random() * 10);
-            hp10.setAttribute("src", d10[die10]);
-            diceDisplay.appendChild(hp10);
+            diceDisplay.appendChild(hp10[die10]);
 
         }
         if (character.class == "Wizard") {
 
-            var d6 = ["d6_up1.png", "d6_up2.png", "d6_up3.png", "d6_up4.png", "d6_up5.png", "d6_up6.png"];
+            let roll1 = document.createElement("img");
+            roll1.src = "d6_up1.png";
+            let roll2 = document.createElement("img");
+            roll2.src = "d6_up2.png";
+            let roll3 = document.createElement("img");
+            roll3.src = "d6_up3.png";
+            let roll4 = document.createElement("img");
+            roll4.src = "d6_up4.png";
+            let roll5 = document.createElement("img");
+            roll5.src = "d6_up5.png";
+            let roll6 = document.createElement("img");
+            roll6.src = "d6_up6.png";
+
+            var hp6 = [roll1, roll2, roll3, roll4, roll5, roll6];
+
             for (let i = 0; i < base; i++) {
-                var hp6 = document.createElement("img");
                 var die6 = Math.floor(Math.random() * 6);
-                hp6.setAttribute("src", d6[die6]);
-                diceDisplay.appendChild(hp6);
+                diceDisplay.appendChild(hp6[die6]);
             }
         }
     }
