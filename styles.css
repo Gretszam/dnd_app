@@ -58,6 +58,26 @@
 
 #deathSaves {
     border: 4px solid;
-    border-color:currentColor;
+    border-color: mediumblue;
     border-style: double;
+}
+
+#statCharName {
+    border: 2px solid;
+    border-color: aquamarine;
+}
+
+#charLevel {
+    border: 2px solid;
+    border-color: aquamarine;
+}
+
+#health {
+    border: 3px dashed;
+    border-color: red;
+}
+
+#hitDice {
+    border: 3px dashed;
+    border-color: plum;
 }

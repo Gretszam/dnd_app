@@ -12,18 +12,18 @@
     <input type="text" id="statCharName" name="name" placeholder="Character Name" size="17" />
     <input type="text" id="charLevel" name="class" placeholder="Class Level" size="15" style="float: right;" />
 
-    <table style="margin-left:auto;margin-right:auto;">
+    <table class="roundPieces" style="margin-left:auto;margin-right:auto;">
         <tr>
-            <th><input id="ac" type="text" size="1" /> </th>
-            <th><input id="init" type="text" size="1" /> </th>
+            <th class="roundPieces"><input id="ac" type="text" size="1" /> </th>
+            <th class="roundPieces"><input id="init" type="text" size="1" /> </th>
             </th>
-            <th><input id="speed" type="text" size="1" /> </th>
+            <th class="roundPieces"><input id="speed" type="text" size="1" /> </th>
             </th>
         </tr>
         <tr>
-            <th>Armor Class</th>
-            <th>Initiative</th>
-            <th>Speed</th>
+            <th class="roundPieces">Armor Class</th>
+            <th class="roundPieces">Initiative</th>
+            <th class="roundPieces">Speed</th>
         </tr>
     </table>
 
@@ -70,9 +70,10 @@
             <input type="checkbox" style="float: inherit;" />
         </div>
 
-        <table id=abilities>
-            <th></th>
-            <th>Ability Scores</thead>
+        <table class=abilities>
+            <thead>
+                <th colspan="3">Ability Scores</th>
+            </thead>
             <tr>
                 <th>Strength</th>
                 <th>Dexterity</th>

@@ -35,3 +35,18 @@ td {
     background-color: slategray;
 }
 
+.roundPieces,
+th,
+td {
+    border: 2px solid;
+    border-collapse: separate;
+    border-color: coral;
+    border-spacing: 2px;
+}
+
+.abilities,
+th,
+td {
+    border: 2px solid;
+    border-color: darkgreen;
+}
