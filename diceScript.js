@@ -400,8 +400,6 @@ function rollPercentile(number) {
         die.remove();
     }
 
-    let roll00 = document.createElement("img");
-    roll00.src = "Percentile_Die_up00.png";
     let roll10 = document.createElement("img");
     roll10.src = "Percentile_Die_up10.png";
     let roll20 = document.createElement("img");
@@ -420,6 +418,8 @@ function rollPercentile(number) {
     roll80.src = "Percentile_Die_up80.png";
     let roll90 = document.createElement("img");
     roll90.src = "Percentile_Die_up90.png";
+     let roll00 = document.createElement("img");
+    roll00.src = "Percentile_Die_up00.png";
 
 
     var imgs = [roll10, roll20, roll30, roll40, roll50, roll60, roll70, roll80, roll90, roll00];
