@@ -1,6 +1,6 @@
-function randomizeDiceImages(dice, imgs, numFaces) {
+function randomizeDiceImages(dice, imgs, numFaces, numberRolls) {
 
-    for (let i = 0; i < number; i++) {
+    for (let i = 0; i < numberRolls; i++) {
         var x = Math.floor(Math.random() * numFaces);
         dice.appendChild(imgs[x]);
     }
@@ -16,7 +16,7 @@ executeD4.addEventListener("click", () => {
     roll4(document.getElementById("textbox").value)
 })
 
-function roll4(number) {
+function roll4(numberRolls) {
 
     var dice = document.getElementById("dice4");
 
@@ -38,7 +38,7 @@ function roll4(number) {
 
     var numFaces = 4;
 
-    randomizeDiceImages(dice, imgs, numFaces);
+    randomizeDiceImages(dice, imgs, numFaces, numberRolls);
 
 }
 
@@ -67,7 +67,7 @@ executeD6.addEventListener("click", () => {
     roll6(document.getElementById("textbox2").value)
 })
 
-function roll6(number) {
+function roll6(numberRolls) {
 
     var dice = document.getElementById("dice6");
 
@@ -91,11 +91,9 @@ function roll6(number) {
 
     var imgs = [roll1, roll2, roll3, roll4, roll5, roll6];
 
-    for (let i = 0; i < number; i++) {
-        var x = Math.floor(Math.random() * 6);
-        dice.appendChild(imgs[x]);
-    }
+    var numFaces = 6;
 
+    randomizeDiceImages(dice, imgs, numFaces, numberRolls);
 
 }
 
@@ -124,7 +122,7 @@ executeD8.addEventListener("click", () => {
     roll8(document.getElementById("textbox3").value)
 })
 
-function roll8(number) {
+function roll8(numberRolls) {
 
     var dice = document.getElementById("dice8");
 
@@ -152,10 +150,9 @@ function roll8(number) {
 
     var imgs = [roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8];
 
-    for (let i = 0; i < number; i++) {
-        var x = Math.floor(Math.random() * 8);
-        dice.appendChild(imgs[x]);
-    }
+    var numFaces = 8;
+
+    randomizeDiceImages(dice, imgs, numFaces, numberRolls);
 }
 
 var modal8 = document.getElementById("modal8");
@@ -183,7 +180,7 @@ executeD10.addEventListener("click", () => {
     roll10(document.getElementById("textbox4").value)
 })
 
-function roll10(number) {
+function roll10(numberRolls) {
 
     var dice = document.getElementById("dice10");
 
@@ -215,10 +212,9 @@ function roll10(number) {
 
     var imgs = [roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8, roll9, rolld10];
 
-    for (let i = 0; i < number; i++) {
-        var x = Math.floor(Math.random() * 10);
-        dice.appendChild(imgs[x]);
-    }
+    var numFaces = 10;
+
+    randomizeDiceImages(dice, imgs, numFaces, numberRolls);
 }
 
 var modal10 = document.getElementById("modal10");
@@ -246,7 +242,7 @@ executeD12.addEventListener("click", () => {
     roll12(document.getElementById("textbox5").value)
 })
 
-function roll12(number) {
+function roll12(numberRolls) {
 
     var dice = document.getElementById("dice12");
 
@@ -282,10 +278,9 @@ function roll12(number) {
 
     var imgs = [roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8, roll9, roll10, roll11, roll12];
 
-    for (let i = 0; i < number; i++) {
-        var x = Math.floor(Math.random() * 12);
-        dice.appendChild(imgs[x]);
-    }
+    var numFaces = 12;
+
+    randomizeDiceImages(dice, imgs, numFaces, numberRolls);
 
 }
 
@@ -314,7 +309,7 @@ executeD20.addEventListener("click", () => {
     roll20(document.getElementById("textbox6").value)
 })
 
-function roll20(number) {
+function roll20(numberRolls) {
 
     var dice = document.getElementById("dice20");
 
@@ -366,10 +361,9 @@ function roll20(number) {
 
     var imgs = [roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8, roll9, roll10, roll11, roll12, roll13, roll14, roll1, roll1, roll17, roll18, roll19, roll20];
 
-    for (let i = 0; i < number; i++) {
-        var x = Math.floor(Math.random() * 20);
-        dice.appendChild(imgs[x]);
-    }
+    var numFaces = 20;
+
+    randomizeDiceImages(dice, imgs, numFaces, numberRolls);
 
 }
 
@@ -399,7 +393,7 @@ executePercent.addEventListener("click", () => {
 })
 
 
-function rollPercentile(number) {
+function rollPercentile(numberRolls) {
 
     var dice = document.getElementById("dicePercent");
 
@@ -432,10 +426,9 @@ function rollPercentile(number) {
 
     var imgs = [roll10, roll20, roll30, roll40, roll50, roll60, roll70, roll80, roll90, roll00];
 
-    for (let i = 0; i < number; i++) {
-        var x = Math.floor(Math.random() * 10);
-        dice.appendChild(imgs[x]);
-    }
+    var numFaces = 10;
+
+    randomizeDiceImages(dice, imgs, numFaces, numberRolls);
 }
 
 var modalPercent = document.getElementById("modalPercent");
