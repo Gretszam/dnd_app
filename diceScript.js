@@ -1,3 +1,12 @@
+function randomizeDiceImages(dice, imgs, numFaces) {
+
+    for (let i = 0; i < number; i++) {
+        var x = Math.floor(Math.random() * numFaces);
+        dice.appendChild(imgs[x]);
+    }
+}
+
+
 //d4
 rollD4.addEventListener("click", () => {
     roll4(document.getElementById("textbox").value)
@@ -27,10 +36,9 @@ function roll4(number) {
 
     var imgs = [d4_1, d4_2, d4_3, d4_4];
 
-    for (let i = 0; i < number; i++) {
-        var x = Math.floor(Math.random() * 4);
-        dice.appendChild(imgs[x]);
-    }
+    var numFaces = 4;
+
+    randomizeDiceImages(dice, imgs, numFaces);
 
 }
 
@@ -333,7 +341,7 @@ function roll20(number) {
     roll8.src = "d20_up8.png";
     let roll9 = document.createElement("img");
     roll9.src = "d20_up9.png";
-    let roll10= document.createElement("img");
+    let roll10 = document.createElement("img");
     roll10.src = "d20_up10.png";
     let roll11 = document.createElement("img");
     roll11.src = "d20_up11.png";
@@ -356,7 +364,7 @@ function roll20(number) {
     let roll20 = document.createElement("img");
     roll20.src = "d20_up20.png";
 
-    var imgs = [roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8, roll9, roll10, roll11, roll12, roll13, roll14, roll1, roll1 ,roll17, roll18, roll19, roll20];
+    var imgs = [roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8, roll9, roll10, roll11, roll12, roll13, roll14, roll1, roll1, roll17, roll18, roll19, roll20];
 
     for (let i = 0; i < number; i++) {
         var x = Math.floor(Math.random() * 20);
@@ -418,7 +426,7 @@ function rollPercentile(number) {
     roll80.src = "Percentile_Die_up80.png";
     let roll90 = document.createElement("img");
     roll90.src = "Percentile_Die_up90.png";
-     let roll00 = document.createElement("img");
+    let roll00 = document.createElement("img");
     roll00.src = "Percentile_Die_up00.png";
 
 
