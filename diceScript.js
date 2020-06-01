@@ -26,13 +26,13 @@ function roll4(numberRolls) {
     }
 
     let d4_1 = document.createElement("img");
-    d4_1.src = "d4_up1.png";
+    d4_1.src = "./dice/d4_up1.png";
     let d4_2 = document.createElement("img");
-    d4_2.src = "d4_up2.png";
+    d4_2.src = "./dice/d4_up2.png";
     let d4_3 = document.createElement("img");
-    d4_3.src = "d4_up3.png";
+    d4_3.src = "./dice/d4_up3.png";
     let d4_4 = document.createElement("img");
-    d4_4.src = "d4_up4.png";
+    d4_4.src = "./dice/d4_up4.png";
 
     var imgs = [d4_1, d4_2, d4_3, d4_4];
 
@@ -77,17 +77,17 @@ function roll6(numberRolls) {
     }
 
     let roll1 = document.createElement("img");
-    roll1.src = "d6_up1.png";
+    roll1.src = "./dice/d6_up1.png";
     let roll2 = document.createElement("img");
-    roll2.src = "d6_up2.png";
+    roll2.src = "./dice/d6_up2.png";
     let roll3 = document.createElement("img");
-    roll3.src = "d6_up3.png";
+    roll3.src = "./dice/d6_up3.png";
     let roll4 = document.createElement("img");
-    roll4.src = "d6_up4.png";
+    roll4.src = "./dice/d6_up4.png";
     let roll5 = document.createElement("img");
-    roll5.src = "d6_up5.png";
+    roll5.src = "./dice/d6_up5.png";
     let roll6 = document.createElement("img");
-    roll6.src = "d6_up6.png";
+    roll6.src = "./dice/d6_up6.png";
 
     var imgs = [roll1, roll2, roll3, roll4, roll5, roll6];
 
@@ -132,21 +132,21 @@ function roll8(numberRolls) {
     }
 
     let roll1 = document.createElement("img");
-    roll1.src = "d8_up1.png";
+    roll1.src = "./dice/d8_up1.png";
     let roll2 = document.createElement("img");
-    roll2.src = "d8_up2.png";
+    roll2.src = "./dice/d8_up2.png";
     let roll3 = document.createElement("img");
-    roll3.src = "d8_up3.png";
+    roll3.src = "./dice/d8_up3.png";
     let roll4 = document.createElement("img");
-    roll4.src = "d8_up4.png";
+    roll4.src = "./dice/d8_up4.png";
     let roll5 = document.createElement("img");
-    roll5.src = "d8_up5.png";
+    roll5.src = "./dice/d8_up5.png";
     let roll6 = document.createElement("img");
-    roll6.src = "d8_up6.png";
+    roll6.src = "./dice/d8_up6.png";
     let roll7 = document.createElement("img");
-    roll7.src = "d8_up7.png";
+    roll7.src = "./dice/d8_up7.png";
     let roll8 = document.createElement("img");
-    roll8.src = "d8_up8.png";
+    roll8.src = "./dice/d8_up8.png";
 
     var imgs = [roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8];
 
@@ -190,25 +190,25 @@ function roll10(numberRolls) {
     }
 
     let roll1 = document.createElement("img");
-    roll1.src = "d10_up1.png";
+    roll1.src = "./dice/d10_up1.png";
     let roll2 = document.createElement("img");
-    roll2.src = "d10_up2.png";
+    roll2.src = "./dice/d10_up2.png";
     let roll3 = document.createElement("img");
-    roll3.src = "d10_up3.png";
+    roll3.src = "./dice/./dice/d10_up3.png";
     let roll4 = document.createElement("img");
-    roll4.src = "d10_up4.png";
+    roll4.src = "./dice/d10_up4.png";
     let roll5 = document.createElement("img");
-    roll5.src = "d10_up5.png";
+    roll5.src = "./dice/d10_up5.png";
     let roll6 = document.createElement("img");
-    roll6.src = "d10_up6.png";
+    roll6.src = "./dice/d10_up6.png";
     let roll7 = document.createElement("img");
-    roll7.src = "d10_up7.png";
+    roll7.src = "./dice/d10_up7.png";
     let roll8 = document.createElement("img");
-    roll8.src = "d10_up8.png";
+    roll8.src = "./dice/d10_up8.png";
     let roll9 = document.createElement("img");
-    roll9.src = "d10_up9.png";
+    roll9.src = "./dice/d10_up9.png";
     let rolld10 = document.createElement("img");
-    rolld10.src = "d10_up10.png";
+    rolld10.src = "./dice/d10_up10.png";
 
     var imgs = [roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8, roll9, rolld10];
 
@@ -252,29 +252,29 @@ function roll12(numberRolls) {
     }
 
     let roll1 = document.createElement("img");
-    roll1.src = "d12_up1.png";
+    roll1.src = "./dice/d12_up1.png";
     let roll2 = document.createElement("img");
-    roll2.src = "d12_up2.png";
+    roll2.src = "./dice/d12_up2.png";
     let roll3 = document.createElement("img");
-    roll3.src = "d12_up3.png";
+    roll3.src = "./dice/d12_up3.png";
     let roll4 = document.createElement("img");
-    roll4.src = "d12_up4.png";
+    roll4.src = "./dice/d12_up4.png";
     let roll5 = document.createElement("img");
-    roll5.src = "d12_up5.png";
+    roll5.src = "./dice/d12_up5.png";
     let roll6 = document.createElement("img");
-    roll6.src = "d12_up6.png";
+    roll6.src = "./dice/d12_up6.png";
     let roll7 = document.createElement("img");
-    roll7.src = "d12_up7.png";
+    roll7.src = "./dice/d12_up7.png";
     let roll8 = document.createElement("img");
-    roll8.src = "d12_up8.png";
+    roll8.src = "./dice/d12_up8.png";
     let roll9 = document.createElement("img");
-    roll9.src = "d12_up9.png";
+    roll9.src = "./dice/d12_up9.png";
     let roll10 = document.createElement("img");
-    roll10.src = "d12_up10.png";
+    roll10.src = "./dice/d12_up10.png";
     let roll11 = document.createElement("img");
-    roll11.src = "d12_up11.png";
+    roll11.src = "./dice/d12_up11.png";
     let roll12 = document.createElement("img");
-    roll12.src = "d12_up12.png";
+    roll12.src = "./dice/d12_up12.png";
 
     var imgs = [roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8, roll9, roll10, roll11, roll12];
 
@@ -319,45 +319,45 @@ function roll20(numberRolls) {
     }
 
     let roll1 = document.createElement("img");
-    roll1.src = "d20_up1.png";
+    roll1.src = "./dice/d20_up1.png";
     let roll2 = document.createElement("img");
-    roll2.src = "d20_up2.png";
+    roll2.src = "./dice/d20_up2.png";
     let roll3 = document.createElement("img");
-    roll3.src = "d20_up3.png";
+    roll3.src = "./dice/d20_up3.png";
     let roll4 = document.createElement("img");
-    roll4.src = "d20_up4.png";
+    roll4.src = "./dice/d20_up4.png";
     let roll5 = document.createElement("img");
-    roll5.src = "d20_up5.png";
+    roll5.src = "./dice/d20_up5.png";
     let roll6 = document.createElement("img");
-    roll6.src = "d20_up6.png";
+    roll6.src = "./dice/d20_up6.png";
     let roll7 = document.createElement("img");
-    roll7.src = "d20_up7.png";
+    roll7.src = "./dice/d20_up7.png";
     let roll8 = document.createElement("img");
-    roll8.src = "d20_up8.png";
+    roll8.src = "./dice/d20_up8.png";
     let roll9 = document.createElement("img");
-    roll9.src = "d20_up9.png";
+    roll9.src = "./dice/d20_up9.png";
     let roll10 = document.createElement("img");
-    roll10.src = "d20_up10.png";
+    roll10.src = "./dice/d20_up10.png";
     let roll11 = document.createElement("img");
-    roll11.src = "d20_up11.png";
+    roll11.src = "./dice/d20_up11.png";
     let roll12 = document.createElement("img");
-    roll12.src = "d20_up12.png";
+    roll12.src = "./dice/d20_up12.png";
     let roll13 = document.createElement("img");
-    roll13.src = "d20_up13.png";
+    roll13.src = "./dice/d20_up13.png";
     let roll14 = document.createElement("img");
-    roll14.src = "d20_up14.png";
+    roll14.src = "./dice/d20_up14.png";
     let roll15 = document.createElement("img");
-    roll15.src = "d20_up15.png";
+    roll15.src = "./dice/d20_up15.png";
     let roll16 = document.createElement("img");
-    roll16.src = "d20_up16.png";
+    roll16.src = "./dice/d20_up16.png";
     let roll17 = document.createElement("img");
-    roll17.src = "d20_up17.png";
+    roll17.src = "./dice/d20_up17.png";
     let roll18 = document.createElement("img");
-    roll18.src = "d20_up18.png";
+    roll18.src = "./dice/d20_up18.png";
     let roll19 = document.createElement("img");
-    roll19.src = "d20_up19.png";
+    roll19.src = "./dice/d20_up19.png";
     let roll20 = document.createElement("img");
-    roll20.src = "d20_up20.png";
+    roll20.src = "./dice/d20_up20.png";
 
     var imgs = [roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8, roll9, roll10, roll11, roll12, roll13, roll14, roll1, roll1, roll17, roll18, roll19, roll20];
 
@@ -403,25 +403,25 @@ function rollPercentile(numberRolls) {
     }
 
     let roll10 = document.createElement("img");
-    roll10.src = "Percentile_Die_up10.png";
+    roll10.src = "./dice/Percentile_Die_up10.png";
     let roll20 = document.createElement("img");
-    roll20.src = "Percentile_Die_up20.png";
+    roll20.src = "./dice/Percentile_Die_up20.png";
     let roll30 = document.createElement("img");
-    roll30.src = "Percentile_Die_up30.png";
+    roll30.src = "./dice/Percentile_Die_up30.png";
     let roll40 = document.createElement("img");
-    roll40.src = "Percentile_Die_up40.png";
+    roll40.src = "./dice/Percentile_Die_up40.png";
     let roll50 = document.createElement("img");
-    roll50.src = "Percentile_Die_up50.png";
+    roll50.src = "./dice/Percentile_Die_up50.png";
     let roll60 = document.createElement("img");
-    roll60.src = "Percentile_Die_up60.png";
+    roll60.src = "./dice/Percentile_Die_up60.png";
     let roll70 = document.createElement("img");
-    roll70.src = "Percentile_Die_up70.png";
+    roll70.src = "./dice/Percentile_Die_up70.png";
     let roll80 = document.createElement("img");
-    roll80.src = "Percentile_Die_up80.png";
+    roll80.src = "./dice/Percentile_Die_up80.png";
     let roll90 = document.createElement("img");
-    roll90.src = "Percentile_Die_up90.png";
+    roll90.src = "./dice/Percentile_Die_up90.png";
     let roll00 = document.createElement("img");
-    roll00.src = "Percentile_Die_up00.png";
+    roll00.src = "./dice/Percentile_Die_up00.png";
 
 
     var imgs = [roll10, roll20, roll30, roll40, roll50, roll60, roll70, roll80, roll90, roll00];

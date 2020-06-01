@@ -85,3 +85,7 @@ body {
     border: 3px dashed;
     border-color: plum;
 }
+
+.diceSize {
+    border-image-width: 20px;
+}
