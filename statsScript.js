@@ -97,25 +97,25 @@ function displayDice(value, base) {
     if (character.class == "Fighter" || "Paladin") {
 
         let roll1 = document.createElement("img");
-    roll1.src = "d10_up1.png";
+    roll1.src = "./dice/d10_up1.png";
     let roll2 = document.createElement("img");
-    roll2.src = "d10_up2.png";
+    roll2.src = "./dice/d10_up2.png";
     let roll3 = document.createElement("img");
-    roll3.src = "d10_up3.png";
+    roll3.src = "./dice/d10_up3.png";
     let roll4 = document.createElement("img");
-    roll4.src = "d10_up4.png";
+    roll4.src = "./dice/d10_up4.png";
     let roll5 = document.createElement("img");
-    roll5.src = "d10_up5.png";
+    roll5.src = "./dice/d10_up5.png";
     let roll6 = document.createElement("img");
-    roll6.src = "d10_up6.png";
+    roll6.src = "./dice/d10_up6.png";
     let roll7 = document.createElement("img");
-    roll7.src = "d10_up7.png";
+    roll7.src = "./dice/d10_up7.png";
     let roll8 = document.createElement("img");
-    roll8.src = "d10_up8.png";
+    roll8.src = "./dice/d10_up8.png";
     let roll9 = document.createElement("img");
-    roll9.src = "d10_up9.png";
+    roll9.src = "./dice/d10_up9.png";
     let rolld10 = document.createElement("img");
-    rolld10.src = "d10_up10.png";
+    rolld10.src = "./dice/d10_up10.png";
 
     var hp10 = [roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8, roll9, rolld10];
 
@@ -128,17 +128,17 @@ function displayDice(value, base) {
         if (character.class == "Wizard") {
 
             let roll1 = document.createElement("img");
-            roll1.src = "d6_up1.png";
+            roll1.src = "./dice/d6_up1.png";
             let roll2 = document.createElement("img");
-            roll2.src = "d6_up2.png";
+            roll2.src = "./dice/d6_up2.png";
             let roll3 = document.createElement("img");
-            roll3.src = "d6_up3.png";
+            roll3.src = "./dice/d6_up3.png";
             let roll4 = document.createElement("img");
-            roll4.src = "d6_up4.png";
+            roll4.src = "./dice/d6_up4.png";
             let roll5 = document.createElement("img");
-            roll5.src = "d6_up5.png";
+            roll5.src = "./dice/d6_up5.png";
             let roll6 = document.createElement("img");
-            roll6.src = "d6_up6.png";
+            roll6.src = "./dice/d6_up6.png";
 
             var hp6 = [roll1, roll2, roll3, roll4, roll5, roll6];
 
