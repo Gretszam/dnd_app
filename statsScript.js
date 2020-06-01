@@ -120,6 +120,14 @@ function displayDice(value, base) {
     var hp10 = [roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8, roll9, rolld10];
 
 
+    for (let i = 0; i < 10; i++) {
+        if (hp10[i] && hp10[i].style) {
+            hp10[i].style.height = "90px";
+            hp10[i].style.width = "155px";
+        }
+    }
+
+
         for (let i = 0; i < base; i++) {
             var die10 = Math.floor(Math.random() * 10);
             diceDisplay.appendChild(hp10[die10]);
@@ -141,6 +149,13 @@ function displayDice(value, base) {
             roll6.src = "./dice/d6_up6.png";
 
             var hp6 = [roll1, roll2, roll3, roll4, roll5, roll6];
+
+            for (let i = 0; i < 10; i++) {
+        if (hp6[i] && hp6[i].style) {
+            hp6[i].style.height = "90px";
+            hp6[i].style.width = "90px";
+        }
+    }
 
             for (let i = 0; i < base; i++) {
                 var die6 = Math.floor(Math.random() * 6);

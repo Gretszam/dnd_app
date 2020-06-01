@@ -6,6 +6,27 @@ function randomizeDiceImages(dice, imgs, numFaces, numberRolls) {
     }
 }
 
+function sizeImages(imgs, numFaces) {
+
+    for (let i = 0; i < numFaces; i++) {
+        if (imgs[i] && imgs[i].style) {
+            imgs[i].style.height = "90px";
+            imgs[i].style.width = "90px";
+        }
+    }
+
+}
+
+function sizeImages10(imgs, numFaces) {
+
+    for (let i = 0; i < numFaces; i++) {
+        if (imgs[i] && imgs[i].style) {
+            imgs[i].style.height = "90px";
+            imgs[i].style.width = "155px";
+        }
+    }
+
+}
 
 //d4
 rollD4.addEventListener("click", () => {
@@ -37,6 +58,8 @@ function roll4(numberRolls) {
     var imgs = [d4_1, d4_2, d4_3, d4_4];
 
     var numFaces = 4;
+
+    sizeImages(imgs, numFaces);
 
     randomizeDiceImages(dice, imgs, numFaces, numberRolls);
 
@@ -92,6 +115,8 @@ function roll6(numberRolls) {
     var imgs = [roll1, roll2, roll3, roll4, roll5, roll6];
 
     var numFaces = 6;
+
+    sizeImages(imgs, numFaces);
 
     randomizeDiceImages(dice, imgs, numFaces, numberRolls);
 
@@ -152,6 +177,8 @@ function roll8(numberRolls) {
 
     var numFaces = 8;
 
+    sizeImages(imgs, numFaces);
+
     randomizeDiceImages(dice, imgs, numFaces, numberRolls);
 }
 
@@ -194,7 +221,7 @@ function roll10(numberRolls) {
     let roll2 = document.createElement("img");
     roll2.src = "./dice/d10_up2.png";
     let roll3 = document.createElement("img");
-    roll3.src = "./dice/./dice/d10_up3.png";
+    roll3.src = "./dice/d10_up3.png";
     let roll4 = document.createElement("img");
     roll4.src = "./dice/d10_up4.png";
     let roll5 = document.createElement("img");
@@ -213,6 +240,8 @@ function roll10(numberRolls) {
     var imgs = [roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8, roll9, rolld10];
 
     var numFaces = 10;
+
+    sizeImages10(imgs, numFaces);
 
     randomizeDiceImages(dice, imgs, numFaces, numberRolls);
 }
@@ -279,6 +308,8 @@ function roll12(numberRolls) {
     var imgs = [roll1, roll2, roll3, roll4, roll5, roll6, roll7, roll8, roll9, roll10, roll11, roll12];
 
     var numFaces = 12;
+
+    sizeImages(imgs, numFaces);
 
     randomizeDiceImages(dice, imgs, numFaces, numberRolls);
 
@@ -363,6 +394,8 @@ function roll20(numberRolls) {
 
     var numFaces = 20;
 
+    sizeImages(imgs, numFaces);
+
     randomizeDiceImages(dice, imgs, numFaces, numberRolls);
 
 }
@@ -427,6 +460,8 @@ function rollPercentile(numberRolls) {
     var imgs = [roll10, roll20, roll30, roll40, roll50, roll60, roll70, roll80, roll90, roll00];
 
     var numFaces = 10;
+
+    sizeImages10(imgs, numFaces);
 
     randomizeDiceImages(dice, imgs, numFaces, numberRolls);
 }
